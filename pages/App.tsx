@@ -1,8 +1,10 @@
 import React from "react"
 
+import { Home } from "../components/templates/home"
+
 const App = () => {
   return (
-    <h1>hello world!</h1>
+    <Home />
   )
 }
 
