@@ -7,6 +7,7 @@ export const Home = () => {
   const myProfile: ProfileState = {
     id: 'doikun3939',
     photo: '../../public/images/ryu.jpg',
+    backgroundImage: '../../public/images/suzaku_jyo.jpeg',
     name: 'どいくん',
     following: 1000,
     followers: 1,

@@ -8,6 +8,7 @@ import { Location } from "../../components/molecules/location"
 const defaultState: ProfileState = {
   id: '',
   photo: '',
+  backgroundImage: '',
   name: '',
   following: 0,
   followers: 0,
@@ -25,17 +26,22 @@ export const Profile = (props: any) => {
   }, [])
   return (
     <div className="Profile__Container">
-      <div className="Profile__Photo">
-        <img className="Profile__Photo-img" src={props.profile.photo} width="90px" height="90px" alt="" />
+      <div>
+        <img className="Profile__background" src={profile.backgroundImage} alt="" />
       </div>
-      <div className="Profile__Follow-data">
-        <span className="Profile__Follow-data--name">{profile.name}</span>
-        <p>{`@${profile.id}`}</p>
-        <p>{profile.description}</p>
-        <Location location={profile.location} />
-        <div>
-          <span>{profile.following}</span><label> フォロー中</label>
-          <span>{profile.followers}</span><label> フォロワー</label>
+      <div className="Profile__Main">
+        <div className="Profile__Photo">
+          <img className="Profile__Photo-img" src={props.profile.photo} width="90px" height="90px" alt="" />
+        </div>
+        <div className="Profile__Follow-data">
+          <span className="Profile__Follow-data--name">{profile.name}</span>
+          <p>{`@${profile.id}`}</p>
+          <p>{profile.description}</p>
+          <Location location={profile.location} />
+          <div>
+            <span>{profile.following}</span><label> フォロー中</label>
+            <span>{profile.followers}</span><label> フォロワー</label>
+          </div>
         </div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 export interface ProfileState {
   id: string,
   photo: string,
+  backgroundImage: string,
   name: string,
   following: number,
   followers: number,

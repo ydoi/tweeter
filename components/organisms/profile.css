@@ -4,6 +4,15 @@
   flex-direction: column;
 }
 
+.Profile__background {
+  height: 150px;
+  width: 100%;
+}
+
+.Profile__Main {
+  margin-top: -25px;
+}
+
 .Profile__Photo {
   margin-right: 2rem;
 }

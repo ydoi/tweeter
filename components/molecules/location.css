@@ -1,3 +1,8 @@
-.Location-text {
+.Location__container {
+  display: flex;
+  align-items: center;
+}
+
+.Location__text {
   color: #828282;
 }
