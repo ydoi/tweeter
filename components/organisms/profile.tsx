@@ -38,7 +38,7 @@ export const Profile = (props: any) => {
           <p>{`@${profile.id}`}</p>
           <p>{profile.description}</p>
           <Location location={profile.location} />
-          <div>
+          <div className="Profile__Follow-data--number">
             <span>{profile.following}</span><label> フォロー中</label>
             <span>{profile.followers}</span><label> フォロワー</label>
           </div>
