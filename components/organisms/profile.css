@@ -37,6 +37,11 @@
   color: black;
 }
 
+.Profile__Option {
+  display: flex;
+  justify-content: start;
+}
+
 .Profile__Follow-data--number {
   margin-top: 1rem;
   font-size: 0.75rem;
