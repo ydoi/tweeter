@@ -1,9 +1,11 @@
-import React from "react"
+import React, { useState, useEffect} from "react"
 
 import { Profile } from "../organisms/profile"
-import { ProfileState } from "../../types"
+import { MainTab } from "../organisms/main_tab"
+import { ProfileState, Tweet } from "../../types"
 
 export const Home = () => {
+  // TODO: mock api
   const myProfile: ProfileState = {
     id: 'doikun3939',
     photo: '../../public/images/ryu.jpg',
@@ -15,9 +17,11 @@ export const Home = () => {
     location: '岡山県倉敷市',
     link: 'twitch.tv/doikun',
   }
+
   return (
     <div className="Home">
       <Profile profile={myProfile} />
+      <MainTab />
     </div>
   )
 }

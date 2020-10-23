@@ -1,0 +1,15 @@
+.MainTab__List {
+  padding: 0;
+}
+
+.MainTab__List li {
+  display: inline;
+  margin: 0 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: gray;
+}
+
+.MainTab__Container {
+  display: flex;
+}
